@@ -8,5 +8,5 @@ Console app to manage patients, doctors, medications, and prescriptions.
 - App: open in IntelliJ → run `Main.main()`
 
 ## Docs
-- [User Guide](docs/USER_DOCUMENTATION.md)
-- [Development Guide](docs/DEVELOPMENT_DOCUMENTATION.md)
+- [User Guide](docs/Tmp_Dev_Doc.md)
+- [Development Guide](docs/Tmp_user_doc.md)
