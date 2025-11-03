@@ -33,37 +33,40 @@ You can add/edit/delete records, search by name, accept prescriptions (linking d
 5. 16 – See patient Rx names (past year)
 6. 17 – Restock to a minimum level (e.g., 100)
 
-## Class Diagram
 
-┌──────────────────┐
-│    Person (abs)  │
-│  id, name, age,  │
-│  phoneNumber     │
-└───────┬──────────┘
-┌────────────────┘
-│
 
-┌─────────▼─────────┐ ┌─────────▼──────────┐
-│ Patient │ │ Doctor │
-│ + currentMeds[] │ │ + specialization │
-│ + prescriptions[] │ │ + patients[] │
-└────────────────────┘ └────────────────────┘
+```md
+## Class Diagram (ASCII)
+```text
+                  ┌──────────────────┐
+                  │    Person (abs)  │
+                  │  id, name, age,  │
+                  │  phoneNumber     │
+                  └───────┬──────────┘
+                          │
+        ┌─────────────────┘
+        │
+┌─────────▼─────────┐             ┌─────────▼──────────┐
+│      Patient       │             │       Doctor       │
+│ + currentMeds[]    │             │ + specialization   │
+│ + prescriptions[]  │             │ + patients[]       │
+└────────────────────┘             └────────────────────┘
 
 ┌────────────────────┐
-│ Medication │
-│ id, name, dose, │
-│ quantity, expiry │
+│     Medication     │
+│ id, name, dose,    │
+│ quantity, expiry   │
 └────────────────────┘
 
 ┌───────────────────────────────────────────┐
-│ Prescription │
-│ id, doctor, patient, medication, │
-│ issuedOn, expiresOn (+1y default) │
+│               Prescription                │
+│ id, doctor, patient, medication,          │
+│ issuedOn, expiresOn (+1y default)         │
 └───────────────────────────────────────────┘
 
 ┌───────────────────────────────────────────┐
-│ MedicationTrackingSystem │
-│ lists: patients, doctors, meds, rx │
-│ search, CRUD, assign, accept, reports │
-│ restock(min or random) │
+│       MedicationTrackingSystem            │
+│ lists: patients, doctors, meds, rx        │
+│ search, CRUD, assign, accept, reports     │
+│ restock(min or random)                    │
 └───────────────────────────────────────────┘
