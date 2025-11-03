@@ -1,36 +1,36 @@
 # Pharmacy Management System — Development Guide
 
 ## Project Structure
-
+```text
 pharmacy-management/
 ├─ pom.xml
 ├─ README.md
 ├─ docs/
-│ ├─ USER_DOCUMENTATION.md
-│ └─ DEVELOPMENT_DOCUMENTATION.md
+│  ├─ USER_DOCUMENTATION.md
+│  └─ DEVELOPMENT_DOCUMENTATION.md
 ├─ src/
-│ ├─ main/java/com/chrisking/pharmacy/
-│ │ ├─ Main.java
-│ │ ├─ model/
-│ │ │ ├─ Person.java
-│ │ │ ├─ Patient.java
-│ │ │ ├─ Doctor.java
-│ │ │ ├─ Medication.java
-│ │ │ └─ Prescription.java
-│ │ ├─ service/
-│ │ │ └─ MedicationTrackingSystem.java
-│ │ └─ util/
-│ │ ├─ Ids.java
-│ │ └─ Samples.java
-│ └─ test/java/com/chrisking/pharmacy/
-│ ├─ model/
-│ │ ├─ PersonTest.java
-│ │ ├─ PatientTest.java
-│ │ ├─ DoctorTest.java
-│ │ ├─ MedicationTest.java
-│ │ └─ PrescriptionTest.java
-│ └─ service/
-│ └─ MedicationTrackingSystemTest.java
+│  ├─ main/java/com/chrisking/pharmacy/
+│  │  ├─ Main.java
+│  │  ├─ model/
+│  │  │  ├─ Person.java
+│  │  │  ├─ Patient.java
+│  │  │  ├─ Doctor.java
+│  │  │  ├─ Medication.java
+│  │  │  └─ Prescription.java
+│  │  ├─ service/
+│  │  │  └─ MedicationTrackingSystem.java
+│  │  └─ util/
+│  │     ├─ Ids.java
+│  │     └─ Samples.java
+│  └─ test/java/com/chrisking/pharmacy/
+│     ├─ model/
+│     │  ├─ PersonTest.java
+│     │  ├─ PatientTest.java
+│     │  ├─ DoctorTest.java
+│     │  ├─ MedicationTest.java
+│     │  └─ PrescriptionTest.java
+│     └─ service/
+│        └─ MedicationTrackingSystemTest.java
 
 
 ## Build & Run
