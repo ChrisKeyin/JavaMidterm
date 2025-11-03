@@ -52,7 +52,7 @@ pharmacy-management/
 
 ## Javadocs
 - Generate: `mvn javadoc:javadoc`
-- Output (default): `target/site/apidocs/index.html`
+- Output (default): `open target/reports/apidocs/index.html`
 
 ## Theoretical Database Design (not required to implement)
 **Tables**
